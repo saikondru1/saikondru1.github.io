@@ -8,9 +8,7 @@
 body {
   display: flex;
   min-height: 100vh;
-  overflow: hidden;
-  background: #f8f9fb;
-  color: #333;
+  transition: background 0.3s, color 0.3s;
 }
 
 .sidebar {
@@ -21,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
 }
 
 .profile-img {
@@ -40,27 +39,58 @@ body {
 .sidebar .title {
   color: #aaa;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .sidebar nav ul {
   list-style: none;
-  text-align: center;
   width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .sidebar nav ul li {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .sidebar nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .sidebar nav ul li a:hover {
   color: #5bc0be;
+}
+
+.socials {
+  margin: 15px 0;
+}
+
+.socials a {
+  color: white;
+  font-size: 24px;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #5bc0be;
+}
+
+.theme-toggle {
+  background: #5bc0be;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #3aafa9;
 }
 
 .resume-btn {
@@ -81,11 +111,13 @@ body {
   flex: 1;
   overflow-y: auto;
   padding: 40px;
+  background: #f8f9fb;
+  color: #333;
 }
 
 section {
   margin-bottom: 50px;
-  animation: fadeIn 1s ease;
+  scroll-margin-top: 40px;
 }
 
 h1 {
@@ -94,6 +126,11 @@ h1 {
   border-bottom: 2px solid #5bc0be;
   display: inline-block;
   padding-bottom: 5px;
+}
+
+ul li {
+  margin-left: 20px;
+  line-height: 1.5;
 }
 
 /* Skills Grid */
@@ -117,17 +154,28 @@ h1 {
   font-size: 0.9rem;
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+/* Dark mode */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
 }
 
-.job ul li {
-  margin-left: 25px;
-  line-height: 1.5;
+body.dark .main-content {
+  background: #181818;
 }
 
-.project {
-  margin-bottom: 20px;
+body.dark h1 {
+  color: #5bc0be;
+}
+
+body.dark .sidebar {
+  background-color: #1b1b1b;
+}
+
+body.dark .theme-toggle {
+  background: #444;
+}
+
+body.dark .sidebar nav ul li a:hover {
+  color: #5bc0be;
 }
