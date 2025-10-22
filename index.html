@@ -1,157 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naga Sai Kondru | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Devicon icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naga Sai Kondru | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Devicon icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/0b3f1d1b7f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="sidebar">
-        <img src="assets/profile.jpg" alt="Profile Image" class="profile-img">
-        <h2>Naga Sai Kondru</h2>
-        <p class="title">Full Stack & Cloud Software Engineer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="assets/Naga_Sai_Kondru_Resume.docx" download class="resume-btn">📄 Download Resume</a>
+  <div class="sidebar">
+    <img src="assets/profile.jpg" alt="Profile Image" class="profile-img">
+    <h2>Naga Sai Kondru</h2>
+    <p class="title">Full Stack & Cloud Software Engineer</p>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="socials">
+      <a href="https://github.com/saikondru1" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/naga-sai-kondru-a583211b4" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
 
-    <div class="main-content">
-        <!-- About -->
-        <section id="about">
-            <h1>About Me</h1>
-            <p>
-                Hi! I’m <b>Naga Sai Kondru</b>, a <b>Full Stack & Cloud Software Engineer</b> with 5 years of experience building enterprise-level web applications and cloud-native systems.
-                My expertise lies in <b>Java, Spring Boot, React.js, AWS, and Azure</b> — crafting microservices that are scalable, secure, and efficient.
-            </p>
-            <p>
-                I thrive on solving performance challenges, optimizing backend systems, and automating DevOps pipelines. 
-                I've deployed production-grade solutions on AWS ECS/EKS, implemented CI/CD using Jenkins and GitHub Actions, and designed REST APIs serving thousands of users.
-            </p>
-            <p>
-                I’m passionate about continuous learning, currently exploring <b>distributed systems, data engineering, and AI-powered cloud automation</b>.  
-                Outside of coding, I love working with drones, exploring cloud architectures, and mentoring junior developers.
-            </p>
-        </section>
+    <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+    <a href="assets/Naga_Sai_Kondru_Resume.docx" download class="resume-btn">📄 Download Resume</a>
+  </div>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h1>Technical Skills</h1>
+  <div class="main-content" id="main-content">
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        I’m <b>Naga Sai Kondru</b>, a passionate <b>Full Stack & Cloud Software Engineer</b> with 5 years of hands-on experience in building enterprise-level, microservices-based applications.
+        I specialize in <b>Java, Spring Boot, React.js, and AWS</b>, focusing on creating high-performing and scalable systems.
+      </p>
+      <p>
+        I have experience deploying full-stack applications on <b>AWS ECS/EKS</b>, implementing CI/CD pipelines using <b>Jenkins</b> and <b>GitHub Actions</b>, and integrating secure REST APIs with OAuth2.
+      </p>
+      <p>
+        I love exploring new technologies like <b>AI-driven DevOps, serverless computing, and cloud-native design patterns</b>.
+      </p>
+    </section>
 
-            <div class="skills-grid">
-                <div class="skill-item"><i class="devicon-java-plain colored"></i><p>Java</p></div>
-                <div class="skill-item"><i class="devicon-spring-plain colored"></i><p>Spring Boot</p></div>
-                <div class="skill-item"><i class="devicon-react-original colored"></i><p>React.js</p></div>
-                <div class="skill-item"><i class="devicon-python-plain colored"></i><p>Python</p></div>
-                <div class="skill-item"><i class="devicon-aws-plain colored"></i><p>AWS</p></div>
-                <div class="skill-item"><i class="devicon-azure-plain colored"></i><p>Azure</p></div>
-                <div class="skill-item"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
-                <div class="skill-item"><i class="devicon-kubernetes-plain colored"></i><p>Kubernetes</p></div>
-                <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
-                <div class="skill-item"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
-                <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
-                <div class="skill-item"><i class="devicon-git-plain colored"></i><p>Git & GitHub</p></div>
-                <div class="skill-item"><i class="devicon-jenkins-line colored"></i><p>Jenkins</p></div>
-                <div class="skill-item"><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
-                <div class="skill-item"><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
-                <div class="skill-item"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-            </div>
-        </section>
+    <section id="skills">
+      <h1>Technical Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+        <div class="skill-item"><i class="devicon-spring-plain colored"></i><p>Spring Boot</p></div>
+        <div class="skill-item"><i class="devicon-react-original colored"></i><p>React.js</p></div>
+        <div class="skill-item"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+        <div class="skill-item"><i class="devicon-aws-plain colored"></i><p>AWS</p></div>
+        <div class="skill-item"><i class="devicon-azure-plain colored"></i><p>Azure</p></div>
+        <div class="skill-item"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
+        <div class="skill-item"><i class="devicon-kubernetes-plain colored"></i><p>Kubernetes</p></div>
+        <div class="skill-item"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+        <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
+        <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
+        <div class="skill-item"><i class="devicon-jenkins-plain colored"></i><p>Jenkins</p></div>
+        <div class="skill-item"><i class="devicon-git-plain colored"></i><p>Git & GitHub</p></div>
+        <div class="skill-item"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+        <div class="skill-item"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+        <div class="skill-item"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+      </div>
+    </section>
 
-        <!-- Experience -->
-        <section id="experience">
-            <h1>Professional Experience</h1>
+    <section id="experience">
+      <h1>Experience</h1>
+      <div class="job">
+        <h2>Software Developer – Cloud Works, Irving, TX</h2>
+        <p><i>Sep 2023 – Present</i></p>
+        <ul>
+          <li>Designed & deployed <b>Spring Boot microservices</b> on AWS improving uptime by 25%.</li>
+          <li>Implemented CI/CD with Jenkins & GitHub Actions, reducing deployment time by 30%.</li>
+          <li>Worked with React.js frontend teams to integrate RESTful APIs & UI workflows.</li>
+        </ul>
+      </div>
 
-            <div class="job">
-                <h2>Software Developer – Cloud Works, Irving, TX</h2>
-                <p><i>Sep 2023 – Present</i></p>
-                <ul>
-                    <li>Developed and deployed <b>Spring Boot microservices</b> on AWS (ECS/EKS) improving scalability and uptime by 25%.</li>
-                    <li>Integrated <b>OAuth2.0 security</b> and API gateway for user authentication and authorization.</li>
-                    <li>Automated builds using <b>Jenkins & GitHub Actions</b>, reducing release cycle by 30%.</li>
-                    <li>Enhanced data layer performance by optimizing queries and database schema.</li>
-                    <li>Collaborated with React.js frontend team to deliver seamless UI-integrated features.</li>
-                </ul>
-            </div>
+      <div class="job">
+        <h2>Jr Software Developer – Cloud Big Data Technologies, Hyderabad</h2>
+        <p><i>Dec 2019 – Dec 2021</i></p>
+        <ul>
+          <li>Built REST APIs with Spring Boot & PostgreSQL for enterprise data systems.</li>
+          <li>Containerized backend services using Docker and automated deployments.</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="job">
-                <h2>Jr Software Developer – Cloud Big Data Technologies, Hyderabad</h2>
-                <p><i>Dec 2019 – Dec 2021</i></p>
-                <ul>
-                    <li>Built scalable backend microservices using <b>Spring Boot</b> and <b>MySQL/PostgreSQL</b>.</li>
-                    <li>Containerized applications using <b>Docker</b> for consistent deployment across environments.</li>
-                    <li>Implemented <b>Kafka-based event processing</b> pipelines for asynchronous communication.</li>
-                    <li>Achieved 90%+ code coverage with JUnit & Mockito testing.</li>
-                </ul>
-            </div>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="project">
+        <h2>Cloud-Native Library Management System</h2>
+        <p>Developed full-stack application using Spring Boot & React.js hosted on AWS ECS. Integrated RDS for database and S3 for file management with secure JWT authentication.</p>
+      </div>
+      <div class="project">
+        <h2>CI/CD Automation with Jenkins</h2>
+        <p>Created end-to-end Jenkins pipelines for Docker image build, test automation, and AWS deployment reducing manual errors by 80%.</p>
+      </div>
+    </section>
 
-            <div class="job">
-                <h2>Software Intern – Cloud Big Data Technologies</h2>
-                <p><i>Apr 2019 – Dec 2019</i></p>
-                <ul>
-                    <li>Assisted in Java microservices development and REST API integrations.</li>
-                    <li>Implemented Kafka producers/consumers to handle real-time event streams.</li>
-                </ul>
-            </div>
-        </section>
+    <section id="education">
+      <h1>Education</h1>
+      <p><b>Master’s in Computer Science</b> – University of North Texas (2022–2023) – GPA: 3.63/4.0</p>
+      <p><b>Bachelor’s in Computer Science</b> – Vignan University (2017–2021) – GPA: 8.6/10</p>
+    </section>
 
-        <!-- Projects -->
-        <section id="projects">
-            <h1>Highlighted Projects</h1>
-            <div class="project">
-                <h2>Cloud-Native Library Management System</h2>
-                <p>Developed a Spring Boot and React-based system deployed on AWS ECS. Integrated RDS for storage and S3 for file management. Built RESTful APIs secured with JWT authentication.</p>
-            </div>
+    <section id="certifications">
+      <h1>Certifications</h1>
+      <ul>
+        <li>Microsoft Certified: Azure Associate Developer</li>
+        <li>AWS Technical Essentials</li>
+        <li>AWS Cloud Practitioner Essentials</li>
+      </ul>
+    </section>
 
-            <div class="project">
-                <h2>CI/CD Automation for Microservices</h2>
-                <p>Implemented multi-stage Jenkins pipelines integrated with GitHub for code quality checks, Docker builds, and AWS ECS deployments reducing manual intervention by 80%.</p>
-            </div>
-
-            <div class="project">
-                <h2>AI Data Pipeline with AWS Glue</h2>
-                <p>Built ETL data pipeline using AWS Glue, Lambda, and S3 to process structured/unstructured data enabling downstream analytics. Optimized Glue jobs for cost efficiency.</p>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section id="education">
-            <h1>Education</h1>
-            <p><b>Master’s in Computer Science</b> – University of North Texas (2022–2023) – GPA: 3.63/4.0</p>
-            <p><b>Bachelor’s in Computer Science</b> – Vignan University (2017–2021) – GPA: 8.6/10</p>
-        </section>
-
-        <!-- Certifications -->
-        <section id="certifications">
-            <h1>Certifications</h1>
-            <ul>
-                <li>Microsoft Certified: Azure Associate Developer</li>
-                <li>AWS Technical Essentials</li>
-                <li>AWS Cloud Practitioner Essentials</li>
-            </ul>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h1>Contact</h1>
-            <p><b>Email:</b> <a href="mailto:saicoc65@gmail.com">saicoc65@gmail.com</a></p>
-            <p><b>Phone:</b> 940-208-5990</p>
-            <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/naga-sai-kondru-a583211b4" target="_blank">linkedin.com/in/naga-sai-kondru</a></p>
-            <p><b>Location:</b> Irving, TX (Open to Remote)</p>
-        </section>
-    </div>
+    <section id="contact">
+      <h1>Contact</h1>
+      <p><b>Email:</b> <a href="mailto:saicoc65@gmail.com">saicoc65@gmail.com</a></p>
+      <p><b>Phone:</b> 940-208-5990</p>
+      <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/naga-sai-kondru-a583211b4" target="_blank">linkedin.com/in/naga-sai-kondru</a></p>
+      <p><b>GitHub:</b> <a href="https://github.com/saikondru1" target="_blank">github.com/saikondru1</a></p>
+    </section>
+  </div>
 </body>
 </html>
